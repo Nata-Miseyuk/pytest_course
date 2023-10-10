@@ -19,6 +19,8 @@ def test_login_form_negative():
     login_button.click()
 
     time.sleep(5)
-    assert driver.find_element(By.XPATH, '//button[@class="error-button"]').is_displayed()
+    # assert driver.find_element(By.XPATH, '//button[@class="error-button"]').is_displayed()
+    error_message = driver.find_element(By.CSS_SELECTOR, ".error-message-container.error").text
+    assert error_message == "Epic sadface: Username and password do not match any user in this service"
 
     driver.quit()
