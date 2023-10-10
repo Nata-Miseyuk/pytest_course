@@ -19,6 +19,6 @@ def test_login_form_negative():
     login_button.click()
 
     time.sleep(5)
-    assert driver.find_element(By.XPATH, '//h3').is_displayed()
+    assert driver.find_element(By.XPATH, '//button[@class="error-button"]').is_displayed()
 
     driver.quit()
