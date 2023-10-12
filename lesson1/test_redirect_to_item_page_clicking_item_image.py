@@ -5,7 +5,7 @@ import time
 driver = webdriver.Chrome()
 
 
-def test_redirection_to_item_page_clicking_item_title():
+def test_redirection_to_item_page_clicking_item_image():
     driver.get("https://www.saucedemo.com/")
 
     username_field = driver.find_element(By.XPATH, '//input[@data-test="username"]')
