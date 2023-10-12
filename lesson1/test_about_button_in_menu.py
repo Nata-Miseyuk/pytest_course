@@ -6,7 +6,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 driver = webdriver.Chrome()
 
 
-def test_logout():
+def test_about_button():
     driver.get("https://www.saucedemo.com/")
     # wait = WebDriverWait(driver, 10)
     # url_before = driver.current_url
